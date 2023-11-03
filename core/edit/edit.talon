@@ -13,13 +13,13 @@ next one: edit.find_next()
 scroll up: edit.page_up()
 scroll down: edit.page_down()
 
-go word left: edit.word_left()
-go word right: edit.word_right()
+low: edit.word_left()
+row: edit.word_right()
 
-go left: edit.left()
-go right: edit.right()
-go up: edit.up()
-go down: edit.down()
+lee: edit.left()
+rye: edit.right()
+up: edit.up()
+down: edit.down()
 
 go line start | head: edit.line_start()
 go line end | tail: edit.line_end()
@@ -34,8 +34,8 @@ go way down: edit.file_end()
 go top: edit.file_start()
 go bottom: edit.file_end()
 
-go page up: edit.page_up()
-go page down: edit.page_down()
+pug: edit.page_up()
+pad: edit.page_down()
 
 # Selecting
 select all: edit.select_all()
@@ -45,15 +45,15 @@ select line end: user.select_line_end()
 
 select left: edit.extend_left()
 select right: edit.extend_right()
-select up: edit.extend_line_up()
-select down: edit.extend_line_down()
+see up: edit.extend_line_up()
+see down: edit.extend_line_down()
 
 select word: edit.select_word()
-select word left: edit.extend_word_left()
-select word right: edit.extend_word_right()
+slow: edit.extend_word_left()
+srow: edit.extend_word_right()
 
-select way left: edit.extend_line_start()
-select way right: edit.extend_line_end()
+see home: edit.extend_line_start()
+see end: edit.extend_line_end()
 select way up: edit.extend_file_start()
 select way down: edit.extend_file_end()
 
@@ -66,8 +66,8 @@ clear all: user.delete_all()
 clear line: edit.delete_line()
 clear line start: user.delete_line_start()
 clear line end: user.delete_line_end()
-clear left: edit.delete()
-clear right: user.delete_right()
+scratch: edit.delete()
+chuck: user.delete_right()
 
 clear up:
     edit.extend_line_up()
@@ -79,11 +79,11 @@ clear down:
 
 clear word: edit.delete_word()
 
-clear word left:
+whack:
     edit.extend_word_left()
     edit.delete()
 
-clear word right:
+bump:
     edit.extend_word_right()
     edit.delete()
 
